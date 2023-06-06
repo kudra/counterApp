@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
-
+  isBgred = false
+  emitCount(cnt:number){
+    this.isBgred = cnt>=10;
+  }
 }

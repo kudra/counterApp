@@ -1,5 +1,5 @@
 
 <footer [ngStyle]="{'background-color': isBgred ? 'red':''}">
     <h4 class="display-block">Footer</h4>
-    <app-counter-button [parentId]="'footer'"></app-counter-button>
+    <app-counter-button [parentId]="'footer'" (emitCount)="emitCount($event)"></app-counter-button>
 </footer>

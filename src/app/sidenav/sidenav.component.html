@@ -1,4 +1,4 @@
-<aside>
+<aside  [ngStyle]="{'background-color': isBgred ? 'red':''}">
     <h4>SideNav</h4>
-    <app-counter-button [parentId]="'sidenav'"></app-counter-button>
+    <app-counter-button [parentId]="'sidenav'" (emitCount)="emitCount($event)"></app-counter-button>
 </aside>

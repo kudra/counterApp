@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  isBgred = false
+  emitCount(cnt:number){
+    this.isBgred = cnt>=10;
+  }
 }

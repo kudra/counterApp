@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   isBgred = false
-
+  emitCount(cnt:number){
+    this.isBgred = cnt>=10;
+  }
 }
