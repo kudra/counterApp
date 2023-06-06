@@ -4,6 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CounterService {
+  private counters: { [parentId: string]: number } = {};
 
-  constructor() { }
+  incrementCount(parentId: string): void {
+    if (!this.counters[parentId]) {
+      this.counters[parentId] = 0;
+    }
+    this.counters[parentId]++;
+  }
+
+  getCount(parentId: string): number {
+    return this.counters[parentId] || 0;
+  }
 }
+

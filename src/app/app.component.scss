@@ -4,28 +4,13 @@
     margin: 5% 10%;
     border: 3px solid #1560BD;
 
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-        border-bottom: 3px solid #1560BD;
-    }
-
     .main-container{
         display: flex;
         height: calc(80vh - 170px);
-        aside{
+        .aside{
             width: 25%;
             border-right: 3px solid #1560BD;
         }
     }
-
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-        border-top: 3px solid #1560BD;
-    }
+    
 }
