@@ -6,10 +6,12 @@
 
     .main-container{
         display: flex;
-        height: calc(80vh - 170px);
         .aside{
             width: 25%;
             border-right: 3px solid #1560BD;
+        }
+        .article {
+            width: 75%;
         }
     }
     

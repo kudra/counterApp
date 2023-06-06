@@ -1,9 +1,11 @@
-<article>
+<article [ngStyle]="{'background-color': isBgred ? 'red':''}">
+  <div class="content-sidenav">
     <section>
       <h4>Content</h4>
     </section>
-    <section>
-        <app-counter-button [parentId]="'content'"></app-counter-button>
-        <app-counter-button [parentId]="'content'"></app-counter-button>
+    <section class="inner_section">
+        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
+        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
     </section>
-  </article>
+  </div>
+</article>
