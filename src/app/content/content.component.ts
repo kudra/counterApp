@@ -2,7 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-content',
-  templateUrl: './content.component.html',
+  template: `<article [ngStyle]="{'background-color': isBgred ? 'red':''}">
+  <div class="content-sidenav">
+    <section>
+      <h4>Content</h4>
+    </section>
+    <section class="inner_section">
+        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
+        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
+    </section>
+  </div>
+</article>`,
   styles:[`
     .inner_section{
       display:flex;

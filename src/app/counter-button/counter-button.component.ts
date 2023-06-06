@@ -3,8 +3,7 @@ import { CounterService
  } from '../counter.service';
 @Component({
   selector: 'app-counter-button',
-  template: `<button (click)="increment()"> Clicked {{count}} times</button>`,
-  styleUrls: ['./counter-button.component.scss']
+  template: `<button (click)="increment()"> Clicked {{count}} times</button>`
 })
 export class CounterButtonComponent {
   @Input() parentId!: string;
